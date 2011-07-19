@@ -1,0 +1,69 @@
+/***************************************************************************************************
+layout.css
+
+This file contains style classes that are used to control the position of page elements. For
+style classes that affect the appearance of page elements, see chrome.css.
+
+The length units should be measured in 'em's, which is defined as the width of a capital 'M'.
+We use this instead of pixels (px) since 'em' units scale when zoomed.
+***************************************************************************************************/
+ 
+/***************************************************************************************************
+Blocks and Inlines
+ - Blocks stack vertically with each other.
+ - Inlines stack horizontally with each other.
+***************************************************************************************************/
+  
+.block, .inline {
+	margin: 0;
+	padding: 0;
+	overflow: hidden; /* Enclose floating elements. */
+	/* Uncomment to see borders around blocks and inlines
+	border-width: 1px;
+	border-style: solid;*/
+}
+
+.block {
+	display: block;
+}
+ 
+.inline {
+	display: inline-block;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	
+	font-family: Georgia, serif;
+}
+
+div#main {
+	margin-left: auto;
+	margin-right: auto;
+	width: 64em;
+}
+
+div#title-block {
+	width: 100%;
+	position: fixed;
+}
+
+h1#title-text {
+	vertical-align: top;
+}
+ 
+blockquote#title-caption {
+	margin: 0.8em;
+	float: right;
+	width: 50%;
+	text-align: right;
+	font-size: 0.8em;
+}
+
+a#menu-item {
+	padding: 0.5em;
+	vertical-align: middle;
+	float: left;
+}
